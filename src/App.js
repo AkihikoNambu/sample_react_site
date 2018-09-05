@@ -5,10 +5,30 @@ import Main from './main.js'
 import Footer from './footer.js'
 
 const lessons = [
-  {id: 1, languageName: 'HTML & CSS', imageUrl: 'https://s3-ap-northeast-1.amazonaws.com/progate/shared/images/lesson/html/study/html.svg'},
-  {id: 2, languageName: 'PHP', imageUrl: 'https://s3-ap-northeast-1.amazonaws.com/progate/shared/images/lesson/html/study/php.svg'},
-  {id: 3, languageName: 'Ruby', imageUrl: 'https://s3-ap-northeast-1.amazonaws.com/progate/shared/images/lesson/html/study/ruby.svg'},
-  {id: 4, languageName: 'Swift', imageUrl: 'https://s3-ap-northeast-1.amazonaws.com/progate/shared/images/lesson/html/study/swift.svg'}
+  {
+    id: 1,
+    languageName: 'HTML & CSS',
+    imageUrl: 'https://s3-ap-northeast-1.amazonaws.com/progate/shared/images/lesson/html/study/html.svg',
+    description: 'WEBページはHTML、CSSという言語によってその見た目が作られています。 実際にWEBページを作りながら学んでみましょう！',
+  },
+  {
+    id: 2,
+    languageName: 'PHP',
+    imageUrl: 'https://s3-ap-northeast-1.amazonaws.com/progate/shared/images/lesson/html/study/php.svg',
+    description: 'PHPを学べば、ユーザーからデータを受け取りそれを表示するなど、 実際のWEBサービスで必要な機能を作ることが出来ます。',
+  },
+  {
+    id: 3,
+    languageName: 'Ruby',
+    imageUrl: 'https://s3-ap-northeast-1.amazonaws.com/progate/shared/images/lesson/html/study/ruby.svg',
+    description: 'RubyはWEBアプリケーションの「システム」をつくるためのプログラミング言語です。',
+  },
+  {
+    id: 4,
+    languageName: 'Swift',
+    imageUrl: 'https://s3-ap-northeast-1.amazonaws.com/progate/shared/images/lesson/html/study/swift.svg',
+    description: 'SwiftはiPhoneアプリを作るための言語です。 Swiftを学んでiPhoneアプリを作る力を身につけましょう！',
+  },
 ]
 
 class App extends Component {
