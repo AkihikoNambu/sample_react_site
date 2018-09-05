@@ -36,10 +36,21 @@ export default class Main extends Component {
         <div className='contents'>
           <h3 className='section-title'>学べるレッスン</h3>
           {lessons.map(lesson => {
-            return <LessonItem key={lesson.id} lesson={lesson} handleClickImage={this.handleClickImage.bind(this) }/>
+            return (
+              <LessonItem
+                key={lesson.id}
+                lesson={lesson}
+                handleClickImage={this.handleClickImage.bind(this)}
+              />
+            )
           })}
         </div>
-        {this.state.isModalOpen && <LessonModal lesson={openLesson} handleClickClose={this.handleClickClose.bind(this)} />}
+        {isModalOpen &&
+          <LessonModal
+            lesson={openLesson}
+            handleClickClose={this.handleClickClose.bind(this)}
+          />
+        }
       </div>
     )
   }

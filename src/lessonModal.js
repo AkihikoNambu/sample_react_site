@@ -12,7 +12,7 @@ export default class LessonModal extends Component {
             onClick={handleClickClose.bind(this)}
           />
           <div className='modal-description'>
-            <h2>{lesson.languageName}</h2>
+            <h2>{lesson.name}</h2>
             <div>{lesson.description}</div>
           </div>
         </div>
