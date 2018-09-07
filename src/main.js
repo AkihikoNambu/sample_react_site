@@ -7,14 +7,14 @@ export default class Main extends Component {
     super(props)
     this.state = {
       isModalOpen: false,
-      openLessonId: 1,
+      openLesson: null,
     }
   }
 
-  handleClickImage(lessonId) {
+  handleClickImage(lesson) {
     this.setState({
       isModalOpen: true,
-      openLessonId: lessonId,
+      openLesson: lesson,
     })
   }
 
@@ -24,8 +24,7 @@ export default class Main extends Component {
 
   render() {
     const {lessons} = this.props
-    const {isModalOpen, openLessonId} = this.state
-    const openLesson = lessons.find(lesson => lesson.id === openLessonId)
+    const {isModalOpen, openLesson} = this.state
 
     return(
       <div className='main'>
@@ -45,7 +44,8 @@ export default class Main extends Component {
             )
           })}
         </div>
-        {isModalOpen &&
+        {/* NOTE: 条件分岐なにでやるか */}
+        {isModalOpen && openLesson &&
           <LessonModal
             lesson={openLesson}
             handleClickClose={this.handleClickClose.bind(this)}
