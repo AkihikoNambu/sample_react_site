@@ -8,7 +8,7 @@ export default class LessonItem extends Component {
       <div className='contents-item'>
         <img
           src={lesson.imageUrl}
-          onClick={this.props.handleClickImage.bind(this, lesson.id)}
+          onClick={this.props.handleClickImage.bind(this, lesson)}
         />
         <p>{lesson.name}</p>
       </div>
