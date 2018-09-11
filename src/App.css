@@ -61,6 +61,45 @@ li {
   margin-top: 30px;
 }
 
+.contact-form {
+  padding-top: 100px;
+  clear: both;
+}
+
+/* フォーム */
+input{
+  width:400px;
+  margin-top:10px;
+  margin-bottom:30px;
+  padding:20px;
+  font-size:18px;
+  border: 1px solid #dee7ec;
+}
+
+textarea{
+  width:400px;
+  margin-top:10px;
+  margin-bottom:30px;
+  padding:20px;
+  font-size:18px;
+  border: 1px solid #dee7ec;
+}
+
+input[type="submit"]:disabled {
+  background: #ccc;
+}
+
+.contact-submit{
+  font-family: 'Dosis', sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  background: #5983ff;
+  color: white;
+  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
+  transition: all .3s;
+  padding: 12px 26px;
+}
+
 /*モーダル*/
 .modal-wrapper {
   position: fixed;
